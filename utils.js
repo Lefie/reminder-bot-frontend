@@ -3,7 +3,8 @@
 
 // through API 
 
-const domain = `http://localhost:3000`
+//const domain = `http://localhost:3000`
+const domain = `https://reminder-bot-backend-production-0695.up.railway.app`
 
 export async function getRemindersArray() {
     const url = `${domain}/get_all_reminders`
