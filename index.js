@@ -20,7 +20,7 @@ const edit_reminder_item_id = localStorage.getItem("reminder_item_id")
 const isEditing = localStorage.getItem("isEditing")
 console.log(edit_reminder_item_id, isEditing)
 
-if(window.location.href.slice(31)!== "edit_reminder.html") {
+if(!window.location.href.includes("edit_reminder.html")) {
     const item1 = localStorage.getItem("isEditing")
     const item2 = localStorage.getItem("reminder_item_id")
     if(item1){
