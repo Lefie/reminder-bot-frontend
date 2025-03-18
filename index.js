@@ -358,9 +358,11 @@ function updateRemindersUI(reminders) {
         span_edit.setAttribute("id","edit_reminder")
         span_edit.addEventListener("click", (e) => {
             const reminder_item_id = span_edit.parentElement.parentElement.id
-            //console.log(typeof reminder_item_id)
+            console.log("reminder id",reminder_item_id)
+
             localStorage.setItem("reminder_item_id",reminder_item_id)
             localStorage.setItem("isEditing","true")
+            console.log("local storage",localStorage)
             window.location.href="edit_reminder.html"
         })
         let span_delete = createEle("span")
